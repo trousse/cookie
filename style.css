@@ -8,13 +8,15 @@ h1{
 }
 
 .root{
-  
   width: 100%;
   padding-top: 300px;
   text-align: center;
+  color: white;
+
+  text-align: center;
 }
 span{
-  color: #5f021f;
+  color: white;
 }
 
 p{
