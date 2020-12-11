@@ -6,7 +6,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="./index.css" rel="stylesheet"
+    <link href="./index.css" rel="stylesheet">
 
 
   </head>
@@ -17,8 +17,10 @@
       <h1 class='root'>Canelé clicker</h1>
       <img src='https://upload.wikimedia.org/wikipedia/commons/a/aa/Caneles_stemilion.jpg' alt = 'canelé' />
       <p><b> vous avez <span id='canelé'>0</span> cannelé </b></p>
+      <p><b> vous avez <span id='nbFour'> 1 </span> four </b></p>
+
       <button onClick = "addCanele()" type="button" name="button">cuisiner</button>
-      <button onClick = "buyFour()" id="four" type="button" name="button" disabled> acheter un four</button>
+      <button onClick = "buyFour()" id="four" type="button" name="button" disabled> acheter un four pour 10 canele</button>
     </div>
     <script>
       var canele = 0;
@@ -41,6 +43,9 @@
         if(!fourBuyable()){
             document.getElementById("four").disabled = true;
         }
+        document.getElementById("nbFour").innerHTML = nbFour;
+        document.getElementById("canelé").innerHTML = canele;
+        document.getElementById("four").innerHTML = "acheter un four pour "+price+" canele";
       }
 
       function addCanele(){
