@@ -1,4 +1,10 @@
-.root{
-  font-size: 'Pacifico';
+h1{
   color: #5f021f;
+  font-family: Pacifico;
+}
+#canelé{
+  color:#a47;
+}
+p{
+  font-family:Neucha;
 }
