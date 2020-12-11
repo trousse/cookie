@@ -18,6 +18,9 @@ h1{
 span{
   color: white;
 }
+button:hover{
+  background-color:#5f021f;
+}
 
 p{
   font-family :Neucha;
