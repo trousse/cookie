@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Pacifico&display=swap" rel="stylesheet">
 
+
     <style>
     h1{
       color: #5f021f;
@@ -28,8 +29,42 @@
       <h1 class='root'>Canelé clicker</h1>
       <img src='https://upload.wikimedia.org/wikipedia/commons/a/aa/Caneles_stemilion.jpg' alt = 'canelé' />
       <p><b> vous avez <span id='canelé'>0</span> cannelé </b></p>
-      <button type="button" name="button">cuisiner</button>
-      <button type="button" name="button" disabled> acheter un four</button>
+      <button onClick = "addCanele()" type="button" name="button">cuisiner</button>
+      <button onClick = "buyFour()" id="four" type="button" name="button" disabled> acheter un four</button>
     </div>
+    <script>
+      var canele = 2;
+      var price = 10;
+      var nbFour = 1;
+
+
+      function fourBuyable(){
+       var  result = false;
+        if(canele >= price){
+          result = true;
+        }
+        return result;
+      }
+
+      function buyFour(){
+        nbFour++;
+        canele -= price;
+        price *= 2;
+        if(!fourBuyable()){
+            document.getElementById("four").disabled = true;
+        }
+      }
+
+      function addCanele(){
+        canele+= nbFour;
+          document.getElementById("canelé").innerHTML = canele;
+          if(fourBuyable()){
+            document.getElementById("four").disabled = false;
+          }
+
+      }
+      document.getElementById("canelé").innerHTML = canele;
+
+    </script>
   </body>
 </html>
