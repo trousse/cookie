@@ -4,13 +4,19 @@
     <title>Canelé clicker</title>
     <meta charset="UTF-8">
 
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Pacifico&display=swap" rel="stylesheet">
 
     <style>
     h1{
-      colors: #5f021f;
+      color: #5f021f;
       font-family: Pacifico;
+    }
+    #canelé{
+      color:#a47;
+    }
+    p{
+      font-family:Neucha;
     }
     </style>
 
@@ -21,7 +27,7 @@
     <div>
       <h1 class='root'>Canelé clicker</h1>
       <img src='https://upload.wikimedia.org/wikipedia/commons/a/aa/Caneles_stemilion.jpg' alt = 'canelé' />
-      <p><b> vous avez <div>0</div> cannelé </b></p>
+      <p><b> vous avez <span id='canelé'>0</span> cannelé </b></p>
       <button type="button" name="button">cuisiner</button>
       <button type="button" name="button" disabled> acheter un four</button>
     </div>
