@@ -1,8 +1,28 @@
 h1{
   color: #5f021f;
   font-family: Pacifico;
+  position: center;
+  width: 100%;
+  text-align: center;
+
+}
+
+.root{
+  
+  width: 100%;
+  padding-top: 300px;
+  text-align: center;
+}
+span{
+  color: #5f021f;
 }
 
 p{
-  font-family:Neucha;
+  font-family :Neucha;
+  font-size: 20;
+}
+
+
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Caneles_stemilion.jpg");
 }
